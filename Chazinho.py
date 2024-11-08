@@ -5,8 +5,8 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 def send_email(subject, body, to_email):
-    sender_email = "samuelsilvescoterin@gmail.com"  
-    password = "hjsu ujmm zdol kzek"  
+    sender_email = "seu email"  
+    password = "Key pública"  
 
     
     server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
@@ -32,7 +32,7 @@ def show_popup():
 
     subject = "Resposta da sua pergunta"
     body = "El* aceitou fazer o chá!"
-    to_email = "samuelsilvescoterin@gmail.com" 
+    to_email = "email do destinatário" 
     send_email(subject, body, to_email)
 
 def move_button(event):
